@@ -3,14 +3,14 @@ cd $HOME/saKen
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x saken
+chmod +x saKen
 chmod +x Nd
 ./Nd
 }
 get() {
-rm -fr MeRo.lua
+rm -fr saKen.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/MeRoAsMrDeV/MeRo/main/MeRo.lua'"
+wget "https://raw.githubusercontent.com/saKenAsMrDeV/saKen/main/saKen.lua'"
 lua start.lua
 }
 installall(){
@@ -48,7 +48,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd MeRo
+cd saKen
 rm -rf luarocks*
 lua start.lua
 
