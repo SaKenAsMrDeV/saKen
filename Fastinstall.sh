@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-cd $HOME/MeRo
+cd $HOME/saKen
 rm -rf $HOME/.telegram-cli
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x MeRo
+chmod +x saKen
 chmod +x Nd
 ./Nd
 }
