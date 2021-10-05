@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-cd $HOME/MeRo
+cd $HOME/saKen
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x MeRo
+chmod +x saken
 chmod +x Nd
 ./Nd
 }
